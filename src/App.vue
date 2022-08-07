@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
 import { ref } from 'vue'
 
-const activeIndex = ref('home')
+const activeIndex = ref('/')
 const handleSelect = (key, keyPath) => {
   console.log(key, keyPath)
 }
@@ -18,6 +18,7 @@ const handleSelect = (key, keyPath) => {
     <div class="flex-grow" />
     <el-menu-item index="/">首页</el-menu-item>
     <el-menu-item index="blogs">博客</el-menu-item>
+    <el-menu-item index="codeDict">代码词典</el-menu-item>
     <el-menu-item index="3">动态</el-menu-item>
     <el-sub-menu index="4">
       <template #title>软件</template>

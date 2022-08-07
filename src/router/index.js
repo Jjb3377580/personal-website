@@ -18,6 +18,11 @@ const router = createRouter({
       component: () => import('../views/blogsView.vue')
     },
     {
+      path: '/codeDict',
+      name: 'codeDict',
+      component: () => import('../views/codeDictView.vue')
+    },
+    {
       path: '/videoPlayer',
       name: 'videoPlayer',
       component: () => import('../views/videoPlayerView.vue')
